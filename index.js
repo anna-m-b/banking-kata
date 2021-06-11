@@ -1,6 +1,19 @@
-function sum(a, b) {
-    return a + b;
+let balance = 0;
+
+function deposit(deposit) {
+  balance += deposit;
 }
+
+function getBalance() {
+  return balance;
+}
+
+function withdraw(amount) {
+  balance -= amount;
+}
+
 module.exports = {
-    sum,
+  getBalance,  
+  deposit,
+  withdraw,
 };
